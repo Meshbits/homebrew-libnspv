@@ -3,9 +3,9 @@ class Libnspv < Formula
   Smart Chains, including the KMD main chain data structures and interacting
   with the p2p network"
   homepage "https://docs.komodoplatform.com/nSPV"
-  url "https://github.com/ns408/libnspv/archive/0.1.tar.gz"
+  url "https://github.com/jl777/libnspv/archive/0.1.tar.gz"
   version "0.1"
-  sha256 "b48a312d4b2c496073a5f9007d1d7d4a7271e5e41ad17cd9b08643980c7dfec2"
+  sha256 ""
 
   # depends_on "cmake" => :build
   depends_on "libsodium"
