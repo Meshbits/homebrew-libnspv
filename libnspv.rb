@@ -12,8 +12,10 @@ class Libnspv < Formula
 
   def install
     ENV.deparallelize  # if your formula fails when building in parallel
+    ENV.prepend_path "PATH", "/usr/local/bin"
     system "./autogen.sh"
-    #system "./configure", "--prefix=#{prefix}"
-    #system "make", "install"
+    system "./configure", "--prefix=#{prefix}"
+    system "make"
+    system "make", "install"
   end
 end
