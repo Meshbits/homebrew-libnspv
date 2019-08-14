@@ -13,7 +13,7 @@ class Libnspv < Formula
   def install
     ENV.deparallelize  # if your formula fails when building in parallel
     system "./autogen.sh"
-    system "./configure", "--prefix=#{prefix}"
-    system "make", "install"
+    #system "./configure", "--prefix=#{prefix}"
+    #system "make", "install"
   end
 end
